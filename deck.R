@@ -3,20 +3,17 @@
 cards <- c("Blue-Eyes White Dragon", "Exodius", "The Winged Dragon of Ra", "Raigeki", 
            "Slifer the Sky Dragon", "Obelisk the Tormentor", "Black Luster Soldier", 
            "5-Headed Dragon", "Exodia the Forbidden One", "Dragon Master Knight")
+
 atk <- c(3000, NA, NA, NA, NA, 4000, 3000, 5000, 1000, 5000)
+print(atk)
 
-names(atk) <- cards
-attributes(atk)
-names(atk)
-atk
+print(atk[6])
 
-names(atk) <- NULL
-atk
+# alternatively
 
-# You can also add names when creating an object
+atk[seq(1, 9, 2)] 
+# with a step of whatever you pass as a third value 
+# the corresponding argument names are intuitive: from = , to = , by = 
+ atk[-(4:6)]
+ atk[atk > 2000]   # notice that R also returns the NA elements because it doesn't know their values
 
- atk <- c("Blue-Eyes White Dragon" = 3000, "Exodius" = NA, "The Winged Dragon of Ra" = NA,
-         "Raigeki" = NA, "Slifer the Sky Dragon" = NA, "Obelisk the Tormentor" = 4000, 
-         "Black Luster Soldier" = 3000, "5-Headed Dragon" = 5000, "Exodia the Forbidden One" = 1000, 
-        "Dragon Master Knight" = 5000)
- 
