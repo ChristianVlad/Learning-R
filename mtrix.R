@@ -23,3 +23,8 @@ rownames(ngo) <- c("2013", "2014", "2015", "2016", "2017")
 ngo
 ngo <- t(ngo)
 ngo
+
+gdp <- matrix(c(47.9, 41.2, 41.9, 54.6, 56.4, 57.4, 1.6, 1.6, 1.7), nrow = 3,
+              byrow = TRUE, dimnames = list(c("de", "usa", "ind"),c("2016",
+               "2017", "2018")))
+gdp
